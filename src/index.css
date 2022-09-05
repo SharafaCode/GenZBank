@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  list-style: none;
+  text-decoration: none;
+outline: none;
+}
+
+
+P{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+
+
+}
+button{
+  border: none;
+}
+html{
+
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+:focus{
+  outline: none;
+}
+
+body{
+  background-color:#00040f; ;
+  color: rgba(255, 255, 255, 0.973);
+  
+}
+
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition:all 08s linear;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+
+.background-color{
+
+  background:#00040f;
+}
+.text-color1{
+
+  color: #00f6ff;
+}
+.text-color2{
+
+  color:rgba(255, 255, 255, 0.7);
+}
+
+.text-color3{
+
+color: rgba(9, 151, 124, 0.1);
+}
+.text-color4{
+
+color: rgba(255, 255, 255, 0.973);
+}
+.text-gradient-color{
+  color: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%);
+}
+
+
+
+.fs-sm{
+font-size: clamp(1.00rem, calc(0.92rem + 0.39vw), 1.20rem);
+
+
+}
+.fs-base{
+font-size: clamp(1.13rem, calc(0.98rem + 0.73vw), 1.50rem);
+
+}
+.fs-lg{
+font-size: clamp(1.27rem, calc(1.03rem + 1.19vw), 1.88rem);
+
+}
+.fs-xl{
+font-size: clamp(1.42rem, calc(1.06rem + 1.80vw), 2.34rem);
+
+}
+.fs-2xl{
+font-size: clamp(1.60rem, calc(1.08rem + 2.59vw), 2.93rem);
+
+}
+.fs-3xl{
+font-size: clamp(1.80rem, calc(1.08rem + 3.63vw), 3.66rem);
+
+}
+.fs-4xl{
+font-size: clamp(2.03rem, calc(1.03rem + 4.98vw), 4.58rem);
+
+}
+.fs-5xl{
+font-size: clamp(2.28rem, calc(0.94rem + 4.71vw), 5.73rem);
+
+}
+.fs-6xl{
+font-size: clamp(2.57rem, calc(0.78rem + 8.95vw), 7.15rem);
+
+
+}
+
+
+ul.inactive {
+  display: none;
+}
+
+ul.active {
+  display: flex;
+}
+
+.flex{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.flex2{
+  display:flex;
+  align-items: center;
+  gap:2rem;
+}
+
+.img{
+  height: 5rem;
+}
+
+.position{
+  position: absolute;
+}
+
+.fixed-nav{
+  position:fixed;
+  top:0;
+  left:0;
+  background: #00040f;
+  z-index: 10;
+}
