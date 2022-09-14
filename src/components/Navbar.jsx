@@ -45,7 +45,7 @@ PositionScroll(position);
 
 
             <div>
-                <ul className={`${toggle ? "active" : "inactive"} sidebar`}>
+                <ul className={`${toggle ? " active" : "inactive"} sidebar`}>
                    {navLinks.map(({id, title})=>(
                 
 
