@@ -50,14 +50,28 @@ h2{
     max-width:80%;
 margin:0 auto;
 flex-direction:row;
-margin-top:3rem;
+transform: translateY(3.5rem);
+
+
+}
+@media screen and (min-width:915px){
+    transform: translateY(-1rem);
+
+}
+
+@media screen and (min-width:960px){
+    transform: translateY(-2.5rem);
+
+}
+@media screen and (min-width:1000px){
+    transform: translateY(-3rem);
 
 }
 
 @media screen and (min-width:1024px){
     max-width:60%;
 margin:0 auto;
-transform: translateY(-2rem);
+transform: translateY(-6rem);
 flex-direction:row;
 
 }

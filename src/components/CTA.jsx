@@ -27,15 +27,18 @@ function CTA() {
 }
 
 const Container = styled.section`
+min-height:100vh;
+width:100%;
 
 display:flex;
 align-items:center;
 justify-content:center;
 position:absolute;
+top:50%;
+left:50%;
 z-index:-10;
-transform:translateY(-12.5rem);
-margin-right:5rem;
-right:0;
+transform:translate(-18%, -63%);
+
 
 
 
@@ -46,29 +49,107 @@ right:0;
 
 
 
+ @media screen and (min-width:360px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-18%, -68%);
+    }
+
+ @media screen and (min-width:390px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-18%, -72%);
+    }
+
+ @media screen and (min-width:400px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-18%, -73%);
+    }
+
+ @media screen and (min-width:500px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-18%, -65%);
+    }
+    
+ @media screen and (min-width:550px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-25%, -65%);
+    }
+
+ @media screen and (min-width:650px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-30%, -65%);
+    }
+
+ @media screen and (min-width:700px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-34%, -65%);
+    }
+ @media screen and (min-width:750px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-36%, -65%);
+    }
+
+
  @media screen and (min-width:768px){
-     margin-right:38rem;
-       
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(-50%, -55%);
     }
 
 
- @media screen and (min-width:850px){
-     margin-right:42rem;
-       
+ @media screen and (min-width:1024px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(10%, -62%);
+    }
+ @media screen and (min-width:1200px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(12%, -62%);
     }
 
 
- @media screen and (min-width:950px){
-     margin-right:48rem;
-       
-    }
 
-
-
-    @media screen and (min-width:1024px){
-      
-          margin-right:0rem;
-       }
 
 
 

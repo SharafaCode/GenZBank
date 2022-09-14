@@ -106,24 +106,27 @@ const LeftCol = styled.div`
     @media screen and (min-width:768px){
         width 75%;
         margin:0 auto;
-        margin-top:4rem;
+        margin-top:2rem;
       
         
         
     }
+  
 
 
     @media screen and (min-width:1024px){
         width 75%;
         margin:0 auto;
         
-        transform:translateY(-3rem)
+        transform:translateY(-5rem)
     }
-    @media screen and (min-width:1280px){
+
+
+    @media screen and (min-width:1200px){
         width 75%;
         margin:0 auto;
         
-        transform:translateY(-7rem)
+        transform:translateY(-10rem)
     }
 
 
@@ -277,7 +280,7 @@ p{
     p{
         width:100%;
         padding-top:2.5rem;
-        font-size: clamp(1.5rem, calc(0.92rem + 0.39vw), 1.20rem);
+        font-size: clamp(1.1rem, calc(0.92rem + 0.39vw), 1.20rem);
         
         
      }
@@ -286,14 +289,14 @@ p{
 
 
     h1{
-        font-size: clamp(5.1rem, calc(1.03rem + 4.98vw), 3.58rem);
+        font-size: clamp(5.2rem, calc(1.03rem + 4.98vw), 3.58rem);
         line-height:7rem;
     }
 
     p{
         width:100%;
         padding-top:2.5rem;
-        font-size: clamp(1.7rem, calc(0.92rem + 0.39vw), 1.20rem);
+        font-size: clamp(1.35rem, calc(0.92rem + 0.39vw), 1.20rem);
         
         
      }
@@ -322,6 +325,9 @@ img{
 @media screen and (min-width:1024px){
 
     transform:translateY(-4rem)
+}
+
+   
 }
 
 

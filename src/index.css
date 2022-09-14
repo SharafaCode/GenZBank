@@ -8,6 +8,7 @@
   list-style: none;
   text-decoration: none;
 outline: none;
+
 }
 
 
@@ -41,6 +42,7 @@ html{
 body{
   background-color:#00040f; ;
   color: rgba(255, 255, 255, 0.973);
+  overflow-x: hidden;
   
 }
 
