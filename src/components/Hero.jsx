@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {robot, discount} from '../assets';
 import CTA from '../components/CTA'
+import {stats} from './data';
+import Fade from 'react-reveal/Fade';
 
 function Hero() {
   return (
@@ -12,6 +14,7 @@ function Hero() {
 
 
         <LeftCol>
+            <Fade left>
             
             <Discounts>  
                 <img src={discount} alt="discount" />
@@ -41,23 +44,46 @@ function Hero() {
             </Text>
 
 
-
+            </Fade>
         </LeftCol>
 
 
 
         <RightCol>
 
+            <Fade right>
+
             <div>
                 <img src={robot} alt="robot" />
             </div>
 
+            </Fade>
+
         </RightCol>
-        
 
 
     </Wrap>
 
+        <Stats>
+        <Fade left>
+            {stats.map(({id, title, value})=>(
+
+                <Content key={id} className>
+                    <div>
+                    <h2>{value}</h2>
+                    </div>
+
+                    <div className='fs-sm text-color1'>
+                        <h3>{title}</h3>
+                    </div>
+                </Content>
+
+
+            ))}
+
+        </Fade>    
+
+        </Stats>
   </Container>
   
   </>
@@ -68,7 +94,8 @@ function Hero() {
 const Container = styled.section`
 
     width 100%;
-    min-height:65vh;
+    min-height:80vh;
+    overflow:hidden;
 
 `
 
@@ -106,7 +133,7 @@ const LeftCol = styled.div`
     @media screen and (min-width:768px){
         width 75%;
         margin:0 auto;
-        margin-top:2rem;
+        margin-top:-2rem;
       
         
         
@@ -248,12 +275,13 @@ p{
         
      }
 }
+
 @media screen and (min-width:768px){
 
 
   h1{
        width:100%;
-        font-size: clamp(4.2rem, calc(1.08rem + 3.63vw), 3.66rem);
+       font-size: clamp(3.2rem, calc(0.78rem + 8.95vw), 2.15rem);
         line-height:7rem;
     }
 
@@ -261,7 +289,7 @@ p{
     p{
         width:100%;
         padding-top:2.5rem;
-        font-size: clamp(1.2rem, calc(0.92rem + 0.39vw), 1.20rem);
+        font-size: clamp(1.1rem, calc(0.92rem + 0.39vw), 1.20rem);
         
         
      }
@@ -274,7 +302,7 @@ p{
     h1{
        width:100%;
         font-size: clamp(4rem, calc(1.08rem + 3.63vw), 2.66rem);
-        line-height:7rem;
+        line-height:8rem;
     }
 
     p{
@@ -290,7 +318,7 @@ p{
 
     h1{
         font-size: clamp(5.2rem, calc(1.03rem + 4.98vw), 3.58rem);
-        line-height:7rem;
+        line-height:8rem;
     }
 
     p{
@@ -334,5 +362,48 @@ img{
 
 
 `;
+
+
+const Stats = styled.article`
+
+
+display:grid;
+row-gap:3rem;
+place-items:center;
+align-items:center;
+justify-content:center;
+
+
+
+
+
+h2{
+   font-size: clamp(1.27rem, calc(1.03rem + 1.19vw), 1.88rem);
+   
+}
+
+
+@media screen and (min-width:768px){
+
+grid-template-columns: repeat(3, 1fr);
+justify-content:space-between;
+
+
+
+}
+
+`;
+
+
+const Content = styled.div`
+
+display:flex;
+gap:1rem;
+justify-content:center;
+align-items:center;
+
+
+
+`
 
 export default Hero

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Slide from 'react-reveal/Slide';
 
 
 function Services() {
@@ -7,6 +8,7 @@ function Services() {
     
     <Container>
         <Wrap>
+            <Slide right>
             <Content>
                 <div>
                     <h2>
@@ -21,6 +23,7 @@ function Services() {
                      <button type='button'><a href="/">Get Started</a></button>
                 </div>
             </Content>
+                </Slide>
         </Wrap>
     </Container>
   )
@@ -30,8 +33,8 @@ const Container = styled.section`
 
 width:100%;
 min-height:30vh;
-margin-top:5rem;
-
+margin-top:8rem;
+overflow:hidden;
 `;
 const Wrap = styled.article`
 

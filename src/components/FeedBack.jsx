@@ -2,6 +2,7 @@ import React from 'react';
 import styled  from 'styled-components';
 import {feedback} from './data';
 import {quotes} from '../assets';
+import Zoom from 'react-reveal/Zoom';
 
 function FeedBack() {
   return (
@@ -17,6 +18,9 @@ function FeedBack() {
                 </div>
             </TextWrap>
             <ContentItem>
+
+
+              <Zoom>
 
 
                 {feedback.map(({id, name, content, img, title})=>(
@@ -36,7 +40,7 @@ function FeedBack() {
                         </div>
                     </Item>
                 ))}
-              
+              </Zoom>
             </ContentItem>
         </Wrap>
     </Container>
@@ -48,8 +52,8 @@ function FeedBack() {
 const Container = styled.section`
 width:100%;
 min-height:45vh;
-margin-top:7rem;
-
+margin-top:10rem;
+overflow:hidden;
 
 
 

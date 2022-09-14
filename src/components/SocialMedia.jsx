@@ -41,7 +41,7 @@ function SocialMedia() {
 const Container = styled.section`
 width:100%;
 margin-top:5rem;
-
+overflow:hidden;
 @media screen and(min-width:768px){
     margin-top:0;
 }

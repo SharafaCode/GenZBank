@@ -1,6 +1,7 @@
 import React from 'react';
 import {features} from './data';
 import styled from 'styled-components';
+import Rotate from 'react-reveal/Rotate';
 
 
 function Business() {
@@ -8,21 +9,23 @@ function Business() {
     <Container>
         <Wrap>
             <LeftCol>
-                <h2>
-                    You do the business, <br/>
-                    we'll handle the money.
-                </h2>
-                <p>
-                    with the right credit card, you can improe your finance life by building credit carring, reward and saving money but we hundred of credits card on the market.
-                </p>
+                <Rotate bottom left> 
+                    <h2>
+                        You do the business, <br/>
+                        we'll handle the money.
+                    </h2>
+                    <p>
+                        with the right credit card, you can improe your finance life by building credit carring, reward and saving money but we hundred of credits card on the market.
+                    </p>
 
-                <button type='button'><a href="/">Get Started</a></button>
-
+                    <button type='button'><a href="/">Get Started</a></button>
+                </Rotate>
             </LeftCol>
 
 
 
             <RightCol>
+            <Rotate top right>
 
                 {features.map(({id, icon, title, content})=>(
 
@@ -42,7 +45,7 @@ function Business() {
 
                 ))}
 
-
+               </Rotate>
             </RightCol>
         </Wrap>
     </Container>
@@ -53,7 +56,8 @@ const Container = styled.section`
 
 width:100%;
 min-height:45vh;
-margin-top:7rem;
+margin-top:10rem;
+overflow:hidden;
 
 
 

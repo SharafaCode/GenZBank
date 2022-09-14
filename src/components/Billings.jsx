@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {bill, apple, google} from '../assets'
+import Flip from 'react-reveal/Flip';
 
 
 function Billings() {
@@ -8,12 +9,15 @@ function Billings() {
     <Container>
         <Wrap>
             <LeftCol>
+            <Flip Right>
                 <div>
                     <img src={bill} alt="" />
                 </div>
-
+            </Flip>
             </LeftCol>
             <RightCol>
+
+            <Flip left>
 
                 <div>
                     <h2>
@@ -34,6 +38,9 @@ function Billings() {
                     </div>
                 </Image>
 
+
+             </Flip>   
+ 
             </RightCol>
         </Wrap>
     </Container>
@@ -43,7 +50,8 @@ const Container = styled.section`
 
 width:100%;
 min-height:45vh;
-margin-top:7rem;
+margin-top:10rem;
+overflow:hidden;
 
 
 @media screen and (min-width:768px){

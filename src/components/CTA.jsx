@@ -29,6 +29,7 @@ function CTA() {
 const Container = styled.section`
 min-height:100vh;
 width:100%;
+overflow:hidden;
 
 display:flex;
 align-items:center;
@@ -55,7 +56,7 @@ transform:translate(-18%, -63%);
     top:50%;
     left:50%;
     z-index:-10;
-    transform:translate(-18%, -68%);
+    transform:translate(-18%, -61%);
     }
 
  @media screen and (min-width:390px){
@@ -64,7 +65,7 @@ transform:translate(-18%, -63%);
     top:50%;
     left:50%;
     z-index:-10;
-    transform:translate(-18%, -72%);
+    transform:translate(-18%, -60%);
     }
 
  @media screen and (min-width:400px){
@@ -73,7 +74,7 @@ transform:translate(-18%, -63%);
     top:50%;
     left:50%;
     z-index:-10;
-    transform:translate(-18%, -73%);
+    transform:translate(-18%, -60%);
     }
 
  @media screen and (min-width:500px){
@@ -127,7 +128,7 @@ transform:translate(-18%, -63%);
     top:50%;
     left:50%;
     z-index:-10;
-    transform:translate(-50%, -55%);
+    transform:translate(18%, -60%);
     }
 
 

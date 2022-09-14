@@ -1,25 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 import {footerLinks} from './data';
+import LightSpeed from 'react-reveal/LightSpeed';
 
 function Footer() {
   return (
     <Container>
         <Wrap>
             <Logo>
+            <LightSpeed top> 
 
                 <div>
                     <h1><a href="" className='text-color4'>GenZ<span className='text-color1'>Bank</span></a></h1>
                     <p className='text-color2'>A new way to make the payments <br /> easy, reliable and secure</p>
                 </div>
+                </LightSpeed> 
             </Logo>
             <Content>
+           
                 {footerLinks.map(({id, title, links})=>(
                     <Items key={id}>
                         <div>
+                         <LightSpeed left>
                             <h2>{title}</h2>
+                            </LightSpeed>
                         </div>
                         <LinksItems>
+                        <LightSpeed right> 
                         {links.map((item, index)=>(
                             <div key={index}>
                                 <p>
@@ -31,9 +38,11 @@ function Footer() {
                                 </p>
                             </div>
                         ))}
+                        </LightSpeed> 
                         </LinksItems>
                     </Items>
                 ))}
+               
 
             </Content>
         </Wrap>
@@ -45,7 +54,8 @@ const Container = styled.section`
 
 width:100%;
 min-height:30vh;
-margin-top:5rem;
+margin-top:8rem;
+overflow:hidden;
 
 `
 const Wrap = styled.article`

@@ -75,7 +75,8 @@ const Container = styled.nav`
 
 width:100%;
 min-height:10vh;
-
+overflow:hidden;
+z-index:10;
 
 }
 
@@ -92,6 +93,7 @@ display: flex;
 align-items:center;
 justify-content:space-between;
 padding:1rem;
+z-index:10;
 
 
 ul{
@@ -103,12 +105,13 @@ ul{
     position: fixed;
     top:8rem;
     right:0;
-    margin-right:2rem;
+    margin-right:3.5rem;
     background: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%);
+    z-index:10;
 
  
     li{

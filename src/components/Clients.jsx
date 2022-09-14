@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {clients} from './data';
+import Bounce from 'react-reveal/Bounce';
 
 
 
@@ -9,15 +10,20 @@ function Clients() {
     <Container>
       <Wrap>
         <Content>
-          {clients.map(({id, logo})=>(
-            <Items key={id}>
-              <div>
-                <img src={logo} alt={logo} />
-                
-              </div>
-            </Items>
+        
+              {clients.map(({id, logo})=>(
+                <Items key={id}>
+                   <Bounce bottom>
+                  <div>
+                 
+                    <img src={logo} alt={logo} />
+                   
+                  </div>
+                  </Bounce>
+                </Items>
 
-          ))}
+              ))}
+          
         </Content>
       </Wrap>
     </Container>
@@ -27,8 +33,8 @@ function Clients() {
 const Container = styled.section`
 width:100%;
 min-height:15vh;
-margin-top:5rem;
-
+margin-top:10rem;
+overflow:hidden;
 
 `
 const Wrap = styled.article`

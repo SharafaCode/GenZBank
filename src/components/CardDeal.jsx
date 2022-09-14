@@ -1,28 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import {card} from '../assets'
+import Zoom from 'react-reveal/Zoom';
 
 function CardDeal() {
   return (
     <Container>
         <Wrap>
             <LeftCol>
-                <div>
-                    <h2>
-                        Find a better card deal <br />
-                        in few easy steps.
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est ipsum excepturi cumque corrupti recusandae reiciendis a quasi repellat velit!</p>
+                <Zoom>
+                    <div>
+                        <h2>
+                            Find a better card deal <br />
+                            in few easy steps.
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est ipsum excepturi cumque corrupti recusandae reiciendis a quasi repellat velit!</p>
 
-                    <button type='button'><a href="/">Get Started</a></button>
+                        <button type='button'><a href="/">Get Started</a></button>
 
-                </div>
-
+                    </div>
+                </Zoom>
             </LeftCol>
             <RightCol>
+                <Zoom>
 
-                <img src={card} alt="card" />
-
+                  <img src={card} alt="card" />
+                </Zoom>
             </RightCol>
         </Wrap>
     </Container>
@@ -34,8 +37,8 @@ const Container = styled.section`
 
 width:100%;
 min-height:45vh;
-margin-top:7rem;
-
+margin-top:10rem;
+overflow:hidden;
 
 @media screen and (min-width:768px){
 

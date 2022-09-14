@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Hero, Stats, Business, Billings, CardDeal, FeedBack,Clients, Services, Footer, SocialMedia} from './components';
+import {Navbar, Hero, Business, Billings, CardDeal, FeedBack,Clients, Services, Footer, SocialMedia} from './components';
 
 
 function App() {
@@ -10,7 +10,6 @@ function App() {
           <Navbar/>
       
           <Hero/>
-          <Stats />
           <Business />
           <Billings />
           <CardDeal />
