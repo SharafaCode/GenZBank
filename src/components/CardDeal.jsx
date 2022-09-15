@@ -36,15 +36,21 @@ function CardDeal() {
 const Container = styled.section`
 
 width:100%;
-min-height:45vh;
+min-height:40vh;
 margin-top:10rem;
 overflow:hidden;
 
 @media screen and (min-width:768px){
 
-    margin-top:4rem;
+    margin-top:5rem;
 }
 
+
+
+@media screen and (min-width:1200px){
+
+    margin-top:8rem;
+}
 
 `
 const Wrap = styled.article`

@@ -55,7 +55,16 @@ min-height:45vh;
 margin-top:10rem;
 overflow:hidden;
 
+@media screen and (min-width:768px){
 
+  margin-top:7rem;
+}
+
+
+@media screen and (min-width:1200px){
+
+  margin-top:15rem;
+}
 
 
 `;

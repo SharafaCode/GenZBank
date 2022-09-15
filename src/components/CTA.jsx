@@ -38,7 +38,7 @@ position:absolute;
 top:50%;
 left:50%;
 z-index:-10;
-transform:translate(-18%, -63%);
+transform:translate(-18%, -70%);
 
 
 
@@ -129,6 +129,14 @@ transform:translate(-18%, -63%);
     left:50%;
     z-index:-10;
     transform:translate(18%, -60%);
+    }
+ @media screen and (min-width:800px){
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-10;
+    transform:translate(15%, -57%);
     }
 
 

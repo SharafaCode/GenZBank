@@ -55,10 +55,20 @@ function Business() {
 const Container = styled.section`
 
 width:100%;
-min-height:45vh;
+min-height:50vh;
 margin-top:10rem;
 overflow:hidden;
 
+
+@media screen and (min-width:768px){
+
+    margin-top:9rem;
+}
+
+@media screen and (min-width:1200px){
+
+    margin-top:15rem;
+}
 
 
 `;

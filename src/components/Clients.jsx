@@ -32,9 +32,22 @@ function Clients() {
 
 const Container = styled.section`
 width:100%;
-min-height:15vh;
+min-height:12vh;
 margin-top:10rem;
 overflow:hidden;
+
+@media screen and (min-width:768px){
+
+  margin-top:7rem;
+}
+
+
+
+
+@media screen and (min-width:1200px){
+
+  margin-top:15rem;
+}
 
 `
 const Wrap = styled.article`

@@ -40,7 +40,8 @@ function SocialMedia() {
 
 const Container = styled.section`
 width:100%;
-margin-top:5rem;
+margin-top:1rem;
+
 overflow:hidden;
 @media screen and(min-width:768px){
     margin-top:0;
@@ -57,7 +58,8 @@ flex-direction:column;
 align-items:center;
 gap:3rem;
 border-top:0.1rem solid rgba(255, 255, 255, 0.7);
-padding-top:3rem;
+padding:1.5rem;
+
 
 
 @media screen and (min-width:768px){

@@ -94,7 +94,7 @@ function Hero() {
 const Container = styled.section`
 
     width 100%;
-    min-height:80vh;
+    min-height:60vh;
     overflow:hidden;
 
 `
@@ -133,7 +133,7 @@ const LeftCol = styled.div`
     @media screen and (min-width:768px){
         width 75%;
         margin:0 auto;
-        margin-top:-2rem;
+        margin-top:2rem;
       
         
         
@@ -281,19 +281,38 @@ p{
 
   h1{
        width:100%;
-       font-size: clamp(3.2rem, calc(0.78rem + 8.95vw), 2.15rem);
+       font-size: clamp(3rem, calc(0.78rem + 8.95vw), 2rem);
         line-height:7rem;
     }
-
 
     p{
         width:100%;
         padding-top:2.5rem;
-        font-size: clamp(1.1rem, calc(0.92rem + 0.39vw), 1.20rem);
+        font-size: clamp(1.1rem, calc(0.92rem + 0.39vw), 1rem);
         
         
      }
+
+
 }
+// @media screen and (min-width:800px){
+//     h1{
+//         width:100%;
+//         font-size: clamp(3.5rem, calc(0.78rem + 8.95vw), 2rem);
+//          line-height:7rem;
+//      }
+ 
+ 
+//      p{
+//          width:100%;
+//          padding-top:2.5rem;
+//          font-size: clamp(1.1rem, calc(0.92rem + 0.39vw), 1.20rem);
+         
+         
+//       }
+
+  
+// }
 
 
 @media screen and (min-width:1024px){
@@ -401,6 +420,11 @@ display:flex;
 gap:1rem;
 justify-content:center;
 align-items:center;
+
+@media screen and (min-width:768px){
+
+    margin-top:5rem;
+}
 
 
 
