@@ -167,6 +167,10 @@ ul.inactive {
 
 ul.active {
   display: flex;
+  
+}
+.hidden{
+  overflow: hidden;
 }
 
 .flex{

@@ -6,28 +6,17 @@ import {close, menu} from '../assets'
 
 function Navbar() {
  const [toggle, setToggle] = useState(false);
- const [position, setPosition]= useState("fixed-nav");
-  
- const navBar = document.querySelector('.NavContainer')
 
-const PositionScroll = (position)=>{
+ const ToggleBtn = () =>{
 
-window.addEventListener('scroll', ()=>{
-
-let Position = window.pageYOffset;
-
-
-if(Position > 100){
-   setPosition('fixed-nav')
-
-} else{
-    setPosition(!'fixed-nav')
+    setToggle((toggle)=>{
+        return !toggle;
+    })
+    toggle?document.body.style.overflow = 'auto' : document.body.style.overflow = 'hidden'
     
-}
-})
-}
+ }
+  
 
-PositionScroll(position);
 
   return (
     <>
@@ -60,7 +49,7 @@ PositionScroll(position);
                
                  <div>
 
-                    <img src={toggle ? close : menu}  alt="Menu"  onClick={()=> setToggle((prev)=> !prev)}/>
+                    <img src={toggle ? close : menu}  alt="Menu"  onClick={()=> ToggleBtn()}/>
                     
                 </div>
             </MenuIcon>
@@ -143,6 +132,7 @@ ul{
 const MenuIcon = styled.div`
 
 justify-self:end;
+cursor:pointer;
 
 img{
     width:3rem;
